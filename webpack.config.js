@@ -29,9 +29,6 @@ module.exports = env => ({
 		}),
 		new MiniCssExtractPlugin({
       filename: env !== 'production' ? '[name].css' : './css/[name].[hash].css'
-		}),
-		new webpack.ProvidePlugin({
-				_: "underscore"
 		})
   ]
 })
